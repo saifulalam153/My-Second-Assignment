@@ -1,0 +1,246 @@
+.stories-main, .navbar, .standard-items, .container, .item {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-ul li{
+    margin-left: 40px;
+}
+#navbar-list-1{
+    color: orange;
+    list-style-type: none
+    ;}
+.navbar-btn1{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: orange;
+    color: aliceblue;
+    border: none;
+    
+}
+#navbar-list-2{
+    color: skyblue;
+    list-style-type: none;
+}
+#navbar-list-3{
+    color: aqua;
+    list-style-type: none;
+}
+#navbar-list-4{
+    color: brown;
+    list-style-type: none;
+}
+.menu-icon{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.container-1{
+    margin-top: 50px
+    
+}
+#container-span{
+    color: orange;
+}
+#container-span-1{
+    color: skyblue;
+}
+.container-btn{
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+}
+.container-img{
+    margin-bottom: 50px;
+}
+.standard{
+    background-image: url(B11-A2-Kids-School/assets/bg.png);
+    
+    margin: 20px;
+}
+.standard-h{
+    font-size: 3rem;
+    text-align: center;
+    
+}
+.standard-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.standard-1{
+    background-image: linear-gradient(rgba(135, 207, 235, 0.468),white);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 15px;
+}
+.standard-2{
+    background-image: linear-gradient(rgba(165, 42, 42, 0.206),white);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px 15px;
+}
+.standard-3{
+    background-image: linear-gradient(rgba(222, 184, 135, 0.355),white);
+    text-align: center;
+    padding: 10px 15px;
+   
+}
+.standard-btn1{
+    background-color: white;
+    color: #F0AA00;
+    border: none;   
+}
+.standard-btn2{
+    background-color: white;
+    color: #64C8FF;
+    border: none; 
+}
+.standard-btn3{
+    background-color: white;
+    color: #8700FF;
+    border: none; 
+
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+    
+}
+.arrow-left{
+  font-size: 1.5rem;
+  color: orange;
+}
+.arrow-right{
+   font-size: 1.5rem;
+   color: orange;
+}
+.stories-h{
+   text-align: center;
+}
+.our-stories{
+    background-image: url('B11-A2-Kids-School/assets/bg.png'), linear-gradient(to bottom, transparent, rgba(254, 163, 1, 0.3));
+}
+.stories-main { 
+    display: grid;
+    gap: 20px;   
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);   
+}
+.stories-main img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+}
+.information{
+    background-color: #64C8FF;
+}
+.stories-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    position: relative;
+}
+
+.stories-btn{
+    position: absolute;
+    color: white;
+    top: 60%;
+    right: 50%;
+    background-color:#8700FF;
+    border-radius: 8px;
+    padding: 10px;
+}
+.stories-2, .stories-3, .stories-4, .stories-5{
+    position: relative;
+}
+.stories-btn-1{
+    position: absolute;
+    color: white;
+    top: 68%;
+    right: 60%;
+    background-color:#8700FF;
+    border-radius: 8px;
+    padding: 10px;
+}
+.view-all-btn{
+    text-align: center;
+}
+.btn-56{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    margin: 20px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.671);
+   
+}
+.item-1{
+    width: 400px;
+}
+.item-11{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .navbar-middle, .navbar-btn{
+        display: none;
+    }
+    .navbar{
+        border-bottom: 2px solid orange;
+        padding-bottom: 10px;
+    }
+    #navbar-head{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+    }
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .standard-items{
+        flex-direction: column;
+    }
+    .stories-1{
+        display: none;
+    }
+    .stories-main{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .item{
+        flex-direction: column;
+    }
+}
