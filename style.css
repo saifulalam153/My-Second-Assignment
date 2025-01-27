@@ -75,7 +75,7 @@
     margin-bottom: 50px;
 }
 .standard{
-    background-image: url(B11-A2-Kids-School/assets/bg.png);
+    background-image: url('assets/bg.png');
     
     margin: 20px;
 }
@@ -142,7 +142,7 @@
    text-align: center;
 }
 .our-stories{
-    background-image: url('B11-A2-Kids-School/assets/bg.png'), linear-gradient(to bottom, transparent, rgba(254, 163, 1, 0.3));
+    background-image: url('assets/bg.png'), linear-gradient(to bottom, transparent, rgba(254, 163, 1, 0.3));
 }
 .stories-main { 
     display: grid;
@@ -230,6 +230,9 @@
     .container{
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .container-img{
+        width: 100%;
     }
     .standard-items{
         flex-direction: column;
